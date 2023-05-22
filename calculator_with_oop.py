@@ -1,3 +1,8 @@
+from user_interface_class import UserInterface
+userinterface = UserInterface()
+
+
+
 #Pseudocode
 
 #Ask the user for their 1st digit
