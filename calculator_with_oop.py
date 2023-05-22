@@ -18,7 +18,7 @@ digit_two = userinterface.user_input_two()
 summation = calculator.addition_operation(digit_one, digit_two)
 
 # Print Summation Result
-userinterface.display_sum_calculation(summation)
+userinterface.display_summation(summation)
 
 
 

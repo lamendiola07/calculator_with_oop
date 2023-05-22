@@ -13,3 +13,18 @@ class UserInterface:
         digit_two = float(input("Please enter your second digit: "))
         return digit_two
     
+    def display_summation(self, summation):
+        #displays addition calculation
+        print (summation)
+
+    def display_difference(self, difference):
+        #displays subtraction calculation
+        print (difference)
+
+    def display_product(self, product):
+        #display multiplication calculation
+        print (product)
+    
+    def display_quotient(self, quotient):
+        #display quotient calculation
+        print (quotient)
