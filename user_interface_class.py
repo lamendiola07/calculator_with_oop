@@ -12,3 +12,4 @@ class UserInterface:
         #ask the user to input for their second digit
         digit_two = float(input("Please enter your second digit: "))
         return digit_two
+    
