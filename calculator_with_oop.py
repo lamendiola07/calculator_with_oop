@@ -122,7 +122,8 @@ while True:
     else:
         print("Sequence Completed")
         break
-    
+
+   #will continue later after class 
 
 
 
