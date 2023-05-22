@@ -1,5 +1,8 @@
 from user_interface_class import UserInterface
+from calculator_class import Calculator
+
 userinterface = UserInterface()
+calculator = Calculator()
 
 
 
