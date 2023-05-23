@@ -8,10 +8,12 @@ from pyfiglet import figlet_format
 userinterface = UserInterface()
 calculator = Calculator()
 
-
-
 #Pseudocode
 def calculator_program():
+
+    #Asking the user for their Calculator Unit
+    print(userinterface.CalculatorUnit(),"is starting to run . . . . . .\n\n")
+
     #Displays Calculator Operations
     print(yellow("C A L C U L A T O R    O P E R A T I O N S",['bold']))
     print(yellow("\n1 - A D D I T I O N \n2 - S U B T R A C T I O N \n3 - M U L T I P L I C A T I O N \n4 - D I V I S I O N",['bold']))

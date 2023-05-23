@@ -1,7 +1,12 @@
 #Creating two <class> for "user interface" and "computations"
 
+from simple_colors import *
+
 #Created class for User Interface:
 class UserInterface:
+    def __init__(self, unit = ""):
+        self.unit = unit
+
     #created function to ask user for number inputs
     def user_input_one(self):
         #ask the user to input for their first digit
@@ -28,3 +33,8 @@ class UserInterface:
     def display_quotient(self, quotient):
         #display quotient calculation
         print (quotient)
+    
+    def CalculatorUnit(self):
+        self.unit = input("What is your Calculator Unit? ")
+        self.unit = (magenta(self.unit))
+        return self.unit
