@@ -1,6 +1,10 @@
 from user_interface_class import UserInterface
 from calculator_class import Calculator
 
+import pyfiglet
+from simple_colors import *
+from pyfiglet import figlet_format
+
 userinterface = UserInterface()
 calculator = Calculator()
 
@@ -9,8 +13,8 @@ calculator = Calculator()
 #Pseudocode
 def calculator_program():
     #Displays Calculator Operations
-    print("C A L C U L A T O R    O P E R A T I O N S")
-    print("\n1 - A D D I T I O N \n2 - S U B T R A C T I O N \n3 - M U L T I P L I C A T I O N \n4 - D I V I S I O N")
+    print(yellow("C A L C U L A T O R    O P E R A T I O N S",['bold']))
+    print(yellow("\n1 - A D D I T I O N \n2 - S U B T R A C T I O N \n3 - M U L T I P L I C A T I O N \n4 - D I V I S I O N",['bold']))
 
     #Ask the user to choose an operation to be used
     ChooseOperation = int(input("\n\nPlease Choose an Operation to Use: "))
@@ -32,11 +36,11 @@ def calculator_program():
             userinterface.display_summation(summation)
 
         except:
-            print("Error Detected!")
+            print(red("Error Detected!"))
         else:
             print("No Error detected")
         finally:
-            print("Sequence Complete")
+            print(green("Sequence Complete"))
 
 
 
@@ -56,11 +60,11 @@ def calculator_program():
             userinterface.display_difference(difference)
 
         except:
-            print("Error Detected!")
+            print(red("Error Detected!"))
         else:
             print("No Error detected")
         finally:
-            print("Sequence Complete")
+            print(green("Sequence Complete"))
 
 
 
@@ -80,11 +84,11 @@ def calculator_program():
             userinterface.display_product(product)
 
         except:
-            print("Error Detected!")
+            print(red("Error Detected!"))
         else:
             print("No Error detected")
         finally:
-            print("Sequence Complete")
+            print(green("Sequence Complete"))
 
 
 
@@ -104,11 +108,11 @@ def calculator_program():
             userinterface.display_quotient(quotient)
         
         except:
-            print("Error Detected!")
+            print(red("Error Detected!"))
         else:
             print("No Error detected")
         finally:
-            print("Sequence Complete")
+            print(green("Sequence Complete"))
 
 calculator_program()
 
@@ -116,11 +120,11 @@ while True:
     AskRepeat = int(input("\nRepeat Sequence? Please type '1' to Repeat Sequence or type '2' if not: "))
 
     if AskRepeat == 1:
-        print("\nRepeating Sequence . . .")
+        print(magenta("\nRepeating Sequence . . .\n"))
         calculator_program()
     
     else:
-        print("Sequence Completed")
+        print(blue("\nSequence Completed"))
         break
 
    #will continue later after class 
