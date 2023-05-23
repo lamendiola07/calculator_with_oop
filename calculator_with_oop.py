@@ -8,6 +8,9 @@ from pyfiglet import figlet_format
 userinterface = UserInterface()
 calculator = Calculator()
 
+print(blue("\n\nLOGIE A. MENDIOLA | BSCPE 1 - 5 | OBJECT ORIENTED PROGRAMMING - ASSIGNMENT #7 "))
+print(blue("INSTRUCTIONS: Re-create Calculator Program with Object Oriented Methods\n\n"))
+
 #Pseudocode
 def calculator_program():
 
