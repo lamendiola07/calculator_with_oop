@@ -133,7 +133,7 @@ def calculator_program():
             #Performing Square Root Calculation
             sqrt_result = calcu_premium.square_root_operation(digit_one, digit_two)
 
-            # Print Square Root Result
+            # Print Square Root Results
             userinterface.display_square_root(sqrt_result)
 
         except:
