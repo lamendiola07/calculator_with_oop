@@ -21,7 +21,7 @@ def calculator_program():
 
     #Displays Calculator Operations
     print(yellow("C A L C U L A T O R    O P E R A T I O N S",['bold']))
-    print(yellow("\n1 - A D D I T I O N \n2 - S U B T R A C T I O N \n3 - M U L T I P L I C A T I O N \n4 - D I V I S I O N",['bold']))
+    print(yellow("\n1 - A D D I T I O N \n2 - S U B T R A C T I O N \n3 - M U L T I P L I C A T I O N \n4 - D I V I S I O N \n5 - S Q U A R E  R O O T" ,['bold']))
 
     #Ask the user to choose an operation to be used
     ChooseOperation = int(input("\n\nPlease Choose an Operation to Use: "))
@@ -114,6 +114,28 @@ def calculator_program():
             # Print Quotient Result
             userinterface.display_quotient(quotient)
         
+        except:
+            print(red("Error Detected!"))
+        else:
+            print("No Error detected")
+        finally:
+            print(green("Sequence Complete"))
+    
+    #Performs Square Root Operation if user chose "5"
+    elif ChooseOperation == 5:
+        try:
+            #Ask the user for their 1st digit
+            digit_one = userinterface.user_input_one()
+
+            #Ask the user for their 2nd digit
+            digit_two = userinterface.user_input_two()
+
+            #Performing Square Root Calculation
+            sqrt_result = calcu_premium.square_root_operation(digit_one, digit_two)
+
+            # Print Square Root Result
+            userinterface.display_square_root(sqrt_result)
+
         except:
             print(red("Error Detected!"))
         else:

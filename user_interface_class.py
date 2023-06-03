@@ -38,3 +38,7 @@ class UserInterface:
         self.unit = input("What is your Calculator Unit? ")
         self.unit = (magenta(self.unit))
         return self.unit
+    
+    def display_square_root(self, sqrt_result):
+        #display square root calculation
+        print (sqrt_result)
