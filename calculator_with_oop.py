@@ -1,5 +1,6 @@
 from user_interface_class import UserInterface
 from calculator_class import Calculator
+from calculator_premium import CalculatorPremium
 
 import pyfiglet
 from simple_colors import *
@@ -7,6 +8,7 @@ from pyfiglet import figlet_format
 
 userinterface = UserInterface()
 calculator = Calculator()
+calcu_premium = CalculatorPremium()
 
 print(blue("\n\nLOGIE A. MENDIOLA | BSCPE 1 - 5 | OBJECT ORIENTED PROGRAMMING - ASSIGNMENT #7 "))
 print(blue("INSTRUCTIONS: Re-create Calculator Program with Object Oriented Methods\n\n"))
